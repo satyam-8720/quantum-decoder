@@ -1,3 +1,34 @@
+"""
+QuTiP-Based Quantum Readout to LLR Generation Script
+---------------------------------------------------
+
+This script implements a physics-to-decoder bridge for a superconducting
+qubit readout system.
+
+What this file does:
+1. Simulates dispersive qubit readout using QuTiP in the time domain
+   for qubit states |0> and |1>.
+2. Generates noisy single-shot measurement trajectories at millikelvin
+   temperature (quantum-limited domain).
+3. Integrates time-domain signals to produce IQ measurement points.
+4. Rotates the IQ plane to align state separation along a single axis.
+5. Converts integrated measurements into Log-Likelihood Ratios (LLRs).
+6. Quantizes LLRs into 8-bit fixed-point format suitable for LDPC decoders.
+7. Exports LLR data and ground-truth bits for external VLSI/FPGA decoding.
+8. Visualizes resonator ring-up dynamics and IQ shot clustering.
+
+Purpose:
+This file connects quantum measurement physics (QuTiP simulation)
+to classical digital decoding (LDPC), enabling realistic end-to-end
+readout and error-correction studies.
+
+Context:
+Developed as part of a group project for VLSID 2026.
+"""
+
+
+
+
 import numpy as np
 import matplotlib.pyplot as plt
 from qutip import *
