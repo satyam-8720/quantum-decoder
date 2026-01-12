@@ -1,3 +1,34 @@
+"""
+LDPC Error-Correction Demonstration Input Generator
+---------------------------------------------------
+
+This script generates a controlled error-injection test case to
+demonstrate the error-correction capability of an LDPC decoder.
+
+What this file does:
+1. Assumes an all-zero codeword as the correct transmitted data.
+2. Creates a 576-bit LLR input stream initialized to strong logic '0'
+   (+127 / 0x7F in 8-bit two’s complement format).
+3. Injects deliberate, high-confidence errors by flipping selected
+   LLR values to strong logic '1' (-127 / 0x81).
+4. Writes the corrupted LLR stream to a memory file
+   (llr_input_qutip.mem) for Vivado/FPGA simulation.
+5. Writes the corresponding ground-truth bit file
+   (true_bits_qutip.txt), containing all zeros.
+
+Purpose:
+This test verifies that the LDPC decoder can correctly recover the
+original codeword even when multiple bits are strongly corrupted.
+Successful decoding (all-zero output) confirms proper soft-decision
+message passing and parity-check enforcement.
+
+Context:
+Used as part of the end-to-end quantum readout to LDPC decoding
+pipeline.
+"""
+
+
+
 import numpy as np
 
 def generate_error_correction_demo():
