@@ -1,0 +1,19 @@
+# Vivado junk
+*.jou
+*.log
+*.str
+*.cache/
+*.hw/
+*.runs/
+*.ip_user_files/
+*.sim/
+*.xpr.backup
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# OS
+.DS_Store
+Thumbs.db
