@@ -81,8 +81,6 @@ QuantumPro (Qubit + Resonator Design)
 
 ## LDPC Decoder Source
 
-## LDPC Decoder Source
-
 This project integrates an open-source LDPC decoder implementation:
 https://github.com/biren15/Design-and-Verification-of-LDPC-Decoder
 
