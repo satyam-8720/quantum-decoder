@@ -12,6 +12,8 @@ The project connects quantum device physics with classical digital signal proces
 Superconducting qubits do not directly produce digital bits. Instead, they generate weak and noisy microwave signals that must be amplified, processed, and statistically interpreted. Reliable quantum systems therefore require a realistic and hardware-aware readout chain extending from millikelvin quantum devices to room-temperature electronics.
 
 This project models the complete measurement and decoding pipeline instead of relying on idealized assumptions.
+> **For detailed methodology, system design, and simulation results, please refer to the project report (PDF) included in this repository.**
+
 
 ---
 
