@@ -79,6 +79,18 @@ QuantumPro (Qubit + Resonator Design)
 
 ---
 
+## LDPC Decoder Source
+
+## LDPC Decoder Source
+
+This project integrates an open-source LDPC decoder implementation:
+https://github.com/biren15/Design-and-Verification-of-LDPC-Decoder
+
+The LDPC decoder RTL and core algorithm logic were adopted from the above repository.
+This project focuses on system–level integration, fixed-point LLR interfacing,
+verification using Vivado simulations, and demonstration of error-correction
+performance under controlled test cases.
+
 ## Challenges and Limitations
 
 - Simplified cryogenic amplifier nonlinearity modeling
